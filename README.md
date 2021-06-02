@@ -12,51 +12,7 @@ Simple Python Stack & more advanced stack
 - stack - return the stack object
 - dump - clear the stack
 
-sample code
-```
-	print(f'stack empty: {stack.empty()}')
-	print(f'stack count: {stack.count()}')
-	print(f'stack items: {stack.stack()}')
-
-	print('stack push: A')
-	stack.push('A')
-	print('stack push: B')
-	stack.push('B')
-	print('stack push: C')
-	stack.push('C')
-
-	print(f'stack empty: {stack.empty()}')
-	print(f'stack count: {stack.count()}')
-	print(f'stack items: {stack.stack()}')
-
-	print('stack pop')
-	stack.pop()
-    
-	print(f'stack empty: {stack.empty()}')
-	print(f'stack count: {stack.count()}')
-	print(f'stack items: {stack.stack()}')
-	
-	print(f'stack peek: {stack.peek()}')
-```
-output
-```
-stack empty: True
-stack count: 0
-stack items: []
-stack push: A
-stack push: B
-stack push: C
-stack empty: False
-stack count: 3
-stack items: ['A', 'B', 'C']
-stack pop
-stack empty: False
-stack count: 2
-stack items: ['A', 'B']
-stack peek: B
-```
-
-### Stack 2
+### Stack2
 
 - init
 - push ( item ) - add item to top of the stack
@@ -72,113 +28,33 @@ stack peek: B
 - dump - clear the stack
 - _ _ iter _ _ - iterate over the stack
 
-sample code
-```
-	print(f'stack empty: {stack.empty()}')
-	print(f'stack count: {stack.count()}')
-	print(f'stack items: {stack.stack()}')
+### Stack3
 
-	print('stack push: A')
-	stack.push('A')
-	print('stack push: B')
-	stack.push('B')
-	print('stack push: C')
-	stack.push('C')
-	
-	print(f'stack empty: {stack.empty()}')
-	print(f'stack count: {stack.count()}')
-	print(f'stack items: {stack.stack()}')
-	
-	print('stack pop')
-	stack.pop()
-
-	print(f'stack empty: {stack.empty()}')
-	print(f'stack count: {stack.count()}')
-	print(f'stack items: {stack.stack()}')
-	
-	print(f'stack peek: {stack.peek()}')
-
-	print('stack pop: 0')
-	print(f'stack pop: {stack[0]}')
-	
-	print(f'stack empty: {stack.empty()}')
-	print(f'stack count: {stack.count()}')
-	print(f'stack items: {stack.stack()}')
-	
-	print(f'stack len: {len(stack)}')
-	
-	print('stack check: C')
-	if 'C' in stack:
-		print('item in stack')
-	else:
-		print('item not in stack')
-		
-	print('stack check: B')
-	if 'B' in stack:
-		print('item in stack')
-	else:
-		print('item not in stack')
-
-	print('stack push: A')
-	stack.push('A')
-	print('stack push: B')
-	stack.push('B')
-	print('stack push: C')
-	stack.push('C')
-
-	print('stack last: D')
-	stack[stack.count() - 1] = 'D'
-
-	print('stack first: X')
-	stack[0] = 'X'
-
-	print(f'stack empty: {stack.empty()}')
-	print(f'stack count: {stack.count()}')
-	print(f'stack items: {stack.stack()}')
-
-	print('stack dump')
-	stack.dump()
-
-	print(f'stack empty: {stack.empty()}')
-	print(f'stack count: {stack.count()}')
-	print(f'stack items: {stack.stack()}')
-```
-output
-```
-stack empty: True
-stack count: 0
-stack items: []
-stack push: A
-stack push: B
-stack push: C
-stack empty: False
-stack count: 3
-stack items: ['A', 'B', 'C']
-stack pop
-stack empty: False
-stack count: 2
-stack items: ['A', 'B']
-stack peek: B
-stack pop: 0
-stack pop: A
-stack empty: False
-stack count: 1
-stack items: ['B']
-stack len: 1
-stack check: C
-item not in stack
-stack check: B
-item in stack
-stack push: A
-stack push: B
-stack push: C
-stack last: D
-stack first: X
-stack empty: False
-stack count: 4
-stack items: ['X', 'A', 'B', 'D']
-stack dump
-stack empty: True
-stack count: 0
-stack items: []
-```
+- _ _ init _ _
+- _ _ call_ _
+- push
+- _ _ add_ _
+- _ _ setitem _ _
+- pop
+- _ _ sub _ _
+- _ _ del _ _
+- _ _ getitem _ _
+- peek
+- _ _ contains _ _
+- empty
+- len
+- _ _ len _ _
+- stack
+- _ _ repr _ _
+- _ _ str _ _
+- dump
+- iter
+- _ _ iter _ _
+- reverse
+- _ _ reversed _ _
+- _ _ eq _ _
+- _ _ lt _ _
+- _ _ le _ _
+- _ _ gt _ _
+- _ _ ge _ _
+- _ _ ne _ _

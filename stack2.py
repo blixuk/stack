@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
-
-class Stack:
+class Stack3:
 
 	def __init__(self):
 		self.STACK = []
